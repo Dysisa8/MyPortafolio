@@ -1,0 +1,151 @@
+/* Variables de colores */
+:root {
+    --color-primary: #007bff;
+    --color-secondary: #6c757d;
+    --color-dark: #343a40;
+    --color-light: #f8f9fa;
+    --color-white: #ffffff;
+    --color-black: #000000;
+  }
+  
+  /* Estilos generales */
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: var(--color-dark);
+    background-color: var(--color-light);
+  }
+  
+  a {
+    text-decoration: none;
+    color: var(--color-primary);
+  }
+  
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Estilos del header */
+  header {
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: var(--color-white);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  #header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 10px;
+  }
+  
+  #logo {
+    display: flex;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+  }
+  
+  #navegation {
+    display: flex;
+    align-items: center;
+  }
+  
+  #navegation ul {
+    display: flex;
+    list-style: none;
+  }
+  
+  #navegation li {
+    margin: 0 10px;
+  }
+  
+  #navegation li a {
+    display: block;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+  
+  #navegation li a:hover {
+    background-color: var(--color-secondary);
+    color: var(--color-white);
+  }
+  
+  #navegation li a.active {
+    background-color: var(--color-primary);
+    color: var(--color-white);
+  }
+  
+  /* Estilos del main */
+  main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+  }
+  
+  .content {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  section {
+    margin-bottom: 40px;
+  }
+  
+  h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 100px; /* Añade esta línea */
+  }
+  
+  #logo > img {
+    height: 60px;
+    width: 100px;
+  }
+  
+  p {
+    text-align: justify;
+    margin-bottom: 10px;
+  }
+
+  #home > h1 {
+    margin-top: 0px;
+  }
+
+  #email {
+    width: 50px;
+    height: 50px;
+  }
+  
+  /* Estilos del footer */
+  footer {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    padding: 10px;
+    padding-left: 200px;
+    text-align: center;
+  }
+  
+  /* Estilos para el tema oscuro */
+  [data-theme="dark"] {
+    --color-primary: #ffffff;
+    --color-secondary: #948d817a;
+    --color-dark: #ffffff;
+    --color-light: #666666;
+    --color-white: #292929;
+    --color-black: #ffffff;
+  }
+  
